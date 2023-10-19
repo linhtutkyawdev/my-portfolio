@@ -1,0 +1,130 @@
+
+
+
+/*===========================
+       8.CONTACT css 
+===========================*/
+
+
+.contact-area{
+    @media #{$md}{
+        padding-top: 90px;
+        padding-bottom: 100px;
+    }
+    @media #{$xs}{
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+}
+
+
+.contact-box{
+    background-color: $white;
+    border: 1px solid $border-color-2;
+    padding: 30px 35px;
+    @include transition(0.3s);
+    
+    @media #{$lg}{
+        padding: 30px 25px;
+    }
+    @media #{$xs}{
+        padding: 30px 25px;
+    }
+    
+    & .contact-icon{
+        & i{
+            font-size: 48px;
+            color: $theme-color;
+        }
+    }
+    & .contact-content{
+        margin-top: 15px;
+        
+        & .contact-title{
+            font-size: 18px;
+            font-weight: 600;
+            padding-bottom: 15px;
+            
+        }
+    }
+    
+    &:hover{
+        @include box-shadow(0px 0px 21px 0px rgba(152, 152, 152, 0.23));
+    }
+}
+
+
+p{
+    &.form-message.success,
+    &.form-message.error {
+        font-size: 16px;
+        color: #333;
+        background: #ddd;
+        padding: 10px 15px;
+        margin-top: 15px;
+        
+        &.form-message.error{
+            color: #f00;
+        }
+    }
+}
+
+
+
+.single-form{
+    margin-top: 30px;
+    
+    & input,
+    & textarea{
+        width: 100%;
+        height: 55px;
+        border-radius: 5px;
+        border: 1px solid $border-color-2;
+        padding: 0 25px;
+        font-size: 16px;
+        color: $body-color;
+        
+        @include placeholder{
+            opacity: 1;
+            color: $body-color;
+        }
+        
+        &:focus{
+            border-color: $theme-color;
+        }
+    }
+    
+    & textarea{
+        height: 135px;
+        padding-top: 10px;
+        resize: none;
+    }
+}
+
+
+.contact-map{
+    & .gmap_canvas{
+        
+        & iframe{
+            width: 100%;
+            height: 335px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: $white;
+            @include box-shadow(0px 0px 12px 0px rgba(152, 152, 152, 0.46));
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

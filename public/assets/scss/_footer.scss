@@ -1,0 +1,114 @@
+
+
+
+/*===========================
+       9.FOOTER css 
+===========================*/
+
+
+.footer-area{}
+
+
+
+.footer-widget{
+    background-color: #152136;
+    
+    @media #{$md}{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    @media #{$xs}{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+.footer-content{
+    & p{
+        color: $white;
+        margin-top: 35px;
+    }
+    
+    & ul{
+        margin-top: 35px;
+        
+        & li{
+            display: inline-block;
+            margin: 0 14px;
+            
+            @media #{$xs}{
+                margin: 0 7px;
+            }
+            
+            & a{
+                font-size: 30px;
+                width: 74px;
+                height: 70px;
+                line-height: 74px;
+                text-align: center;
+                border-radius: 50%;
+                color: #bebebe;
+                background-color: #1c2940;
+                @include transition(0.3s);
+                
+                @media #{$xs}{
+                    width: 52px;
+                    height: 50px;
+                    line-height: 50px;
+                    font-size: 20px;
+                }
+                
+                &:hover{
+                    background-color: $theme-color;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+
+.footer-copyright{
+    background-color: #1c2940;
+    
+    & .copyright-text{
+        & p{
+            color: $white;
+        }
+    }
+}
+
+
+
+
+
+.back-to-top{
+    font-size: 20px;
+    color: $white;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    line-height: 46px;
+    border-radius: 50%;
+    border: 2px solid #586376;
+    background-color: #152136;
+    text-align: center;
+    z-index: 99;
+    @include transition(0.3s);
+    display: none;
+    
+    &:hover{
+        color: $white;
+        background-color: $theme-color;
+        border-color: $theme-color;
+    }
+}
+
+
+
+
+
+
+
