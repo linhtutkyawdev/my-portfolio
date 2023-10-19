@@ -1,0 +1,144 @@
+
+
+
+/*===========================
+        5.WORK css 
+===========================*/
+
+.work-area{
+    @media #{$md}{
+        padding-top: 90px;
+        padding-bottom: 100px;
+    }
+    @media #{$xs}{
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+}
+
+
+.single-work{
+    position: relative;
+    
+    
+    & .work-image{
+        & img{
+            width: 100%;
+        }
+    }
+    & .work-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(117, 78, 249, 0.8);
+        opacity: 0;
+        visibility: hidden;
+        @include transition(0.3s);
+        
+        & .work-content{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            @include transform(translateY(-50%));
+            
+            & .work-title{
+                font-size: 22px;
+                color: $white;
+                font-weight: 60;
+                @include transform(translateY(-100%));
+                margin-bottom: 15px;
+                @include transition(0.3s);
+                opacity: 0;
+            }
+            & ul{
+                position: relative;
+                padding-top: 20px;
+                
+                &::before{
+                    position: absolute;
+                    content: '';
+                    width: 60px;
+                    height: 2px;
+                    background-color: $white;
+                    left: 50%;
+                    @include transform(translateX(-50%));
+                    top: 0;
+                }
+                
+                & li{
+                    display: inline-block;
+                    margin: 0 15px;
+                    @include transition(0.3s);
+                    opacity: 0;
+                    
+                    & a{
+                        width: 50px;
+                        height: 50px;
+                        line-height: 50px;
+                        font-size: 25px;
+                        color: $white;
+                        border-radius: 50%;
+                        border: 1px solid $white;
+                        text-align: center;
+                        @include transition(0.3s);
+                        
+                        &:hover{
+                            background-color: $white;
+                            color: $theme-color;
+                        }
+                    }
+                    
+                    &:nth-of-type(1){
+                        @include transform(translateX(-100%));
+                    }
+                    &:nth-of-type(2){
+                        @include transform(translateX(100%));
+                    }
+                }
+            }
+        }
+    }
+    
+    &:hover{
+        & .work-overlay{
+            opacity: 1;
+            visibility: visible;
+            & .work-content{
+                & .work-title{
+                    @include transform(translateY(0));
+                    opacity: 1;
+                }
+                
+                & ul{
+                    & li{
+                        @include transform(translateX(0));
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

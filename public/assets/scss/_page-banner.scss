@@ -1,0 +1,81 @@
+
+
+
+/*===========================
+      10.PAGE BANNER css 
+===========================*/
+
+
+.page-banner{
+    margin-top: 95px;
+    padding-top: 118px;
+    padding-bottom: 122px;
+    
+    @media #{$md}{
+        padding-top: 88px;
+        padding-bottom: 92px;
+    }
+    @media #{$xs}{
+        padding-top: 73px;
+        padding-bottom: 72px;
+    }
+}
+
+
+.page-banner-content{
+    position: relative;
+    z-index: 9;
+    
+    & .page-title{
+        font-size: 48px;
+        text-transform: uppercase;
+        color: $white;
+        padding-bottom: 10px;
+        
+        @media #{$xs}{
+            font-size: 28px;
+        }
+        @media #{$md}{
+            font-size: 38px;
+        }
+    }
+    
+    & .breadcrumb{
+        background: none;
+        border-radius: 0;
+        padding: 0;
+        margin-bottom: 0;
+        
+        & .breadcrumb-item{
+            color: $white;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            position: relative;
+            padding-left: 26px;
+            
+            & a{
+                color: $white;
+                font-size: 16px;
+                font-weight: 500;
+            }
+            
+            & + .breadcrumb-item{
+                &::before{
+                    position: absolute;
+                    content: '';
+                    width: 10px;
+                    height: 2px;
+                    background-color: $white;
+                    left: 7px;
+                    top: 50%;
+                    @include transform(translateY(-50%));
+                }
+            }
+        }
+    }
+}
+
+
+
+

@@ -1,0 +1,134 @@
+
+
+
+/*===========================
+        3.ABOUT css 
+===========================*/
+
+.about-area{
+    @media #{$md}{
+        padding-top: 90px;
+        padding-bottom: 100px;
+    }
+    @media #{$xs}{
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+}
+
+
+.about-content{
+    & .about-title{
+        font-size: 18px;
+        font-weight: 500;
+        padding-bottom: 15px;
+    }
+    
+    & ul {
+        padding-top: 15px;
+        
+        & li{
+            width: 50%;
+            float: left;
+            margin-top: 5px;
+            
+            @media #{$lg}{
+                width: 100%;
+                float: none;
+            }
+            @media #{$xs}{
+                width: 100%;
+                float: none;
+            }
+            @media #{$sm}{
+                width: 50%;
+                float: left;
+            }
+        }
+    }
+    
+    & .single-info{
+        & .info-icon{
+            & i{
+                font-size: 16px;
+                color: $theme-color;
+            }
+        }
+        & .info-text{
+            padding-left: 13px;
+            & p{
+                & span{
+                    color: $heading-color;
+                }
+            }
+        }
+    }
+}
+
+
+
+.about-skills{
+    & .skill-item{
+        & .skill-header{
+            position: relative;
+            
+            & .skill-title{
+                font-size: 16px;
+                font-weight: 400;
+                
+            }
+            & .skill-percentage{
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 16px;
+                color: $heading-color;
+                font-weight: 400;
+                display: -webkit-flex;
+                display: -moz-flex;
+                display: -ms-flex;
+                display: -o-flex;
+                display: flex;
+                
+                & .count-box{
+                    font-size: 16px;
+                    color: $heading-color;
+                }
+            }
+        }
+        
+        & .skill-bar{
+            margin-top: 15px;
+            
+            & .bar-inner{
+                width: 100%;
+                height: 5px;
+                border-radius: 5px;
+                background-color: $bar-color;
+                position: relative;
+                
+                & .progress-line{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 5px;
+                    border-radius: 5px;
+                    background-color: $theme-color;
+                    @include transition(2s);
+                    width: 0;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

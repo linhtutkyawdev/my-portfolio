@@ -1,0 +1,102 @@
+
+
+
+/*===========================
+    4.CALL TO ACTION css 
+===========================*/
+
+.call-to-action{
+    position: relative;
+    z-index: 9;
+    
+    @media #{$md}{
+        padding-top: 90px;
+        padding-bottom: 100px;
+    }
+    @media #{$xs}{
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+    
+    &::before{
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(117, 78, 249, 0.7);
+        z-index: -1;
+    }
+}
+
+.call-action-content{
+    .action-title{
+        font-size: 45px;
+        font-weight: 700;
+        color: $white;
+        padding-bottom: 30px;
+        
+        @media #{$xs}{
+            font-size: 30px;
+        }
+    }
+    
+    & p{
+        color: $white;
+        padding-bottom: 25px;
+    }
+    
+    & ul{
+        & li{
+            display: inline-block;
+            margin: 10px 15px 0;
+            
+            & .main-btn{
+                width: 180px;
+                padding: 0;
+                
+                &.custom{
+                    @include box-shadow(none);
+                    background-color: $white;
+                    color: $theme-color;
+                    border-color: $white;
+                    
+                    &:hover{
+                        background-color: $theme-color;
+                        color: $white;
+                        border-color: $theme-color;
+                    }
+                } 
+                
+                &.custom-2{
+                    color: $white;
+                    background-color: transparent;
+                    border-color: $white;
+                    
+                    &:hover{
+                        background-color: rgba(255, 255, 255, 0.5);
+                        color: $white;
+                        border-color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
