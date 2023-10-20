@@ -36,9 +36,7 @@
   src: url("../fonts/comic-sans-ms/ComicSansMS3.ttf");
 }
 
-html,
-body,
-div {
+main {
   scroll-behavior: smooth;
 }
 
