@@ -110,3 +110,32 @@
   });
   //=====
 })(jQuery);
+
+(function () {
+  // https://dashboard.emailjs.com/admin/account
+  emailjs.init("bGL8sWKUTx4liRTYo");
+})();
+
+window.onload = function () {
+  document
+    .getElementById("contact-form")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+      // generate a five digit number for the contact_number variable
+      this.contact_number.value = (Math.random() * 100000) | 0;
+      // these IDs from the previous steps
+      emailjs
+        .sendForm("service_my_portfolio", "template_my_portfolio", this)
+        .then(
+          function () {
+            alert(
+              "Successfully sent email! Check Your email for automatic reply!"
+            );
+          },
+          function (error) {
+            alert("Unexpected error occred");
+            console.log("error", error);
+          }
+        );
+    });
+};
