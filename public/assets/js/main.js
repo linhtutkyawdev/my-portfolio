@@ -62,7 +62,18 @@
       { accY: 0 }
     );
   }
-
+  $("#scrollbar").scroll(() => {
+    if ($(".progress-line").length) {
+      $(".progress-line").appear(
+        function () {
+          var el = $(this);
+          var percent = el.data("width");
+          $(el).css("width", percent + "%");
+        },
+        { accY: 0 }
+      );
+    }
+  });
   //===== Counter Up
   $(".counter").counterUp({
     delay: 10,

@@ -31,6 +31,17 @@
     1. COMMON css 
 ===========================*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800");
+@font-face {
+  font-family: "Commic Sans MS";
+  src: url("../fonts/comic-sans-ms/ComicSansMS3.ttf");
+}
+
+html,
+body,
+div {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
@@ -1079,7 +1090,7 @@ p {
   width: 0;
 }
 
-//lhk
+/* lhk */
 #scrollbar::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #f5f5f5;
@@ -1097,9 +1108,9 @@ p {
     linear,
     left bottom,
     left top,
-    color-stop(0.44, rgb(122, 153, 217)),
-    color-stop(0.72, rgb(73, 125, 189)),
-    color-stop(0.86, rgb(28, 58, 148))
+    color-stop(0.44, rgb(159, 127, 248)),
+    color-stop(0.72, rgb(145, 103, 243)),
+    color-stop(0.86, rgb(111, 57, 238))
   );
 }
 
