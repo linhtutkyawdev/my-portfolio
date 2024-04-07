@@ -3,20 +3,52 @@ export const LINKS = ["Home", "About", "Services", "Works", "Blog", "Contact"];
 export const DESCRIPTION = "A Full-Stack Web Developer";
 export const SKILLS: { title: string; progress: number }[] = [
   {
-    title: "Javascript (Vanilla)",
+    title: "Javascript / Typescript (Vanilla)",
+    progress: 87,
+  },
+  {
+    title: "Rust",
+    progress: 75,
+  },
+  {
+    title: "C#",
+    progress: 70,
+  },
+  {
+    title: "Java",
     progress: 80,
   },
   {
     title: "PHP (Vanilla)",
-    progress: 60,
+    progress: 75,
+  },
+  {
+    title: "Bash",
+    progress: 70,
+  },
+  {
+    title: "Linux",
+    progress: 80,
+  },
+  {
+    title: "Python",
+    progress: 70,
+  },
+  {
+    title: "Laravel",
+    progress: 75,
   },
   {
     title: "Nodejs",
-    progress: 95,
+    progress: 90,
+  },
+  {
+    title: "ExpressJS",
+    progress: 75,
   },
   {
     title: "ReactJS",
-    progress: 97,
+    progress: 95,
   },
   {
     title: "NextJS",
@@ -31,40 +63,23 @@ export const SKILLS: { title: string; progress: number }[] = [
     progress: 80,
   },
   {
-    title: "TailwindCSS",
-    progress: 90,
-  },
-  {
-    title: "Laravel",
-    progress: 70,
-  },
-  {
-    title: "Python",
-    progress: 60,
-  },
-  {
-    title: "HTML",
-    progress: 100,
-  },
-
-  {
-    title: "CSS",
-    progress: 98,
-  },
-  {
     title: "SevelteJS",
     progress: 75,
   },
   {
-    title: "Express",
-    progress: 75,
-  },
-  {
     title: "ElysiaJS",
-    progress: 75,
+    progress: 70,
   },
   {
-    title: "BunSH",
-    progress: 100,
+    title: "HTML",
+    progress: 99,
+  },
+  {
+    title: "CSS",
+    progress: 99,
+  },
+  {
+    title: "TailwindCSS",
+    progress: 99,
   },
 ];
