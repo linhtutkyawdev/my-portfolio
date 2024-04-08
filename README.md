@@ -1,8 +1,15 @@
-# My Portfolio: AstroJS
+# My Portfolio
 
 ```sh
 bun dev
 ```
+
+## Tech Stack
+- AstroJS
+- Javascript
+- Bootstrapcss
+- JQuery
+- EmailJS
 
 ## Secreenshots
 
