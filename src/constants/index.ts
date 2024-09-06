@@ -1,5 +1,5 @@
 export const NAME = 'Lin Htut Kyaw';
-export const LINKS = ['Home', 'About', 'Services', 'Works', 'Blog', 'Contact'];
+export const LINKS = ['Home', 'About', 'Works', 'Services', 'Blog', 'Contact'];
 export const DESCRIPTION = 'A Creative Developer';
 export const SKILLS: { title: string; progress: number }[] = [
   {
